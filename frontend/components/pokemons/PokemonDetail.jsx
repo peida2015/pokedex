@@ -1,7 +1,7 @@
 var React = require('react'),
     ApiUtil = require('../../util/ApiUtil'),
     PokemonStore = require('../../stores/pokemon'),
-    ;
+    ToysIndex = require('../toys/ToysIndex');
 
 var PokemonDetail = React.createClass({
   getInitialState: function(){
@@ -55,6 +55,7 @@ var PokemonDetail = React.createClass({
           {pokemon}
           <ToysIndex/>
         </div>
+        {this.props.children}
       </div>
     );
   }

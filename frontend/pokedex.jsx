@@ -32,7 +32,7 @@ $(function () {
   var routes = (
     <Route path="/" component={ App }>
       <Route path="pokemon/:pokemonId" component={ PokemonDetail }>
-        <Route path="pokemon/:toyId" component={ ToyDetail }>
+        <Route path="toys/:toyId" component={ ToyDetail }>
 
         </Route>
       </Route>
